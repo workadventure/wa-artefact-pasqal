@@ -27,6 +27,43 @@ WA.onInit().then(() => {
             WA.nav.openCoWebSite("https://workadventure.github.io/embed-pages/src/pasqal/welcome.html");
         }
     });
+    let helpZone: any;
+    WA.room.area.onEnter('helpZoneLeft').subscribe(() => {
+        helpZone = WA.ui.displayActionMessage({
+            message: "<div style='text-align:center;'>Press <svg width='20' height='10' viewBox='0 0 20 10' style='margin-right: 2px; margin-left: 2px; fill: white; border-radius: 2px; border: 1px solid white; padding: 2px; box-sizing: border-box; background-color: white;'><text x='50%' y='50%' text-anchor='middle' dominant-baseline='middle' style='font-size: 10px; fill: black; font-weight: bold;'>SPACE</text></svg> to get help</div>",
+            callback: () => {
+                WA.ui.modal.closeModal();
+                WA.ui.modal.openModal({
+                    src: "https://workadventure.github.io/embed-pages/src/pasqal/welcome.html",
+                    allow: 'fullscreen',
+                    title: 'Bienvenue',
+                    allowApi: true,
+                    position: 'right',
+                });
+            }
+        }); 
+    })
+    WA.room.area.onLeave('helpZoneLeft').subscribe(() => {
+        helpZone.remove();
+    })
+    WA.room.area.onEnter('helpZoneRight').subscribe(() => {
+        helpZone = WA.ui.displayActionMessage({
+            message: "<div style='text-align:center;'>Press <svg width='20' height='10' viewBox='0 0 20 10' style='margin-right: 2px; margin-left: 2px; fill: white; border-radius: 2px; border: 1px solid white; padding: 2px; box-sizing: border-box; background-color: white;'><text x='50%' y='50%' text-anchor='middle' dominant-baseline='middle' style='font-size: 10px; fill: black; font-weight: bold;'>SPACE</text></svg> to get help</div>",
+            callback: () => {
+                WA.ui.modal.closeModal();
+                WA.ui.modal.openModal({
+                    src: "https://workadventure.github.io/embed-pages/src/pasqal/welcome.html",
+                    allow: 'fullscreen',
+                    title: 'Bienvenue',
+                    allowApi: true,
+                    position: 'right',
+                });
+            }
+        }); 
+    })
+    WA.room.area.onLeave('helpZoneRight').subscribe(() => {
+        helpZone.remove();
+    })
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
