@@ -18,11 +18,28 @@ WA.onInit().then(() => {
         WA.room.showLayer('Roof1');
         WA.room.showLayer('Roof2');
     });
+    WA.room.onEnterLayer("silent").subscribe(() => {
+        WA.room.showLayer('silentRoof');
+    });
+
+    WA.room.onLeaveLayer("silent").subscribe(() => {
+        WA.room.hideLayer('silentRoof');
+    });
 
     WA.ui.actionBar.addButton({
-        id: 'explore-btn',
+        id: 'help-btn',
         // @ts-ignore
-        label: 'Event info',
+        label: 'Help',
+        callback: () => {
+            WA.nav.openCoWebSite("https://workadventure.github.io/embed-pages/src/pasqal/welcome.html");
+        }
+    });
+
+    WA.ui.actionBar.addButton({
+        id: 'workspace',
+        // @ts-ignore
+        label: 'Ressources',
+        toolTip: 'Access to your project directory',
         callback: () => {
             WA.nav.openCoWebSite("https://workadventure.github.io/embed-pages/src/pasqal/welcome.html");
         }
