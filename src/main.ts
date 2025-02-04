@@ -33,53 +33,53 @@ WA.onInit().then(() => {
     let ressourcesUrl: any;
     let githubUrl: any;
     if(WA.player.tags.includes("room1")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1CDLSMttrmndpWNLSky7pFvGeTflR5yLp?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom1') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom1') as string;
     } else if (WA.player.tags.includes("room2")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1937ac3i5jZsPISRolIJuWt3-31s1x1pH?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom2') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom2') as string;
     } else if (WA.player.tags.includes("room3")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1s65iaJEptQyCEl-mf9vUh8xQuYH91J9n?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom3') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom3') as string;
     } else if (WA.player.tags.includes("room4")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1t_ocFUi-F8aIyJAH5F2JiHOn2MC_dvvZ?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom4') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom4') as string;
     } else if (WA.player.tags.includes("room5")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1zVUnAdlHFvChsI69dvXiLu8k8SY8Zlwp?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom5') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom5') as string;
     } else if (WA.player.tags.includes("room6")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1Bm32-5zUX2jqYosLZv6KzRdqL1xZa2gv?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom6') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom6') as string;
     } else if (WA.player.tags.includes("room7")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/17dXMnrooA1c99SN0hcYORNMdHEB_K55T?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom7') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom7') as string;
     } else if (WA.player.tags.includes("room8")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1OkBsinwvNWJtg7nnSAZ4EJ3KFkjdmB7F?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom8') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom8') as string;
     } else if (WA.player.tags.includes("room9")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/14sDTehs-_Tjzh7dO1A_YYKlnkaiGAHzd?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom9') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom9') as string;
     } else if (WA.player.tags.includes("room10")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1AI85Rc0F5SMRY_T2NQUXV9kQy22Rbzl7?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('gitRoom10') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom10') as string;
     } else if (WA.player.tags.includes("room11")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1bvw5m6WCwzVfYAXgyFqF7stp5IhVB3Cr?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = "WA.state.loadVariable('gitRoom11') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom11') as string;
     } else if (WA.player.tags.includes("room12")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/10GJl9QJ73wr1jp0irPzn4bulh_vUMU-3?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('gitRoom12') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom12') as string;
     } else if (WA.player.tags.includes("room13")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1zgWxsDV3SHGJNHeIFlp7nsr-GfNHpp3W?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('gitRoom13') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom13') as string;
     } else if (WA.player.tags.includes("room14")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1BJxMu1A434jx8Jws2RNy6fDq1mWKRxCD?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('gitRoom14') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom14') as string;
     } else if (WA.player.tags.includes("room15")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1XWV9m0RSM-oOUFp3ZN0-DdbMpZgeeqDZ?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('gitRoom15') as string;
+        ressourcesUrl = WA.state.loadVariable('gitRoom15') as string;
     } else if (WA.player.tags.includes("admin")) {
-        ressourcesUrl = "https://drive.google.com/drive/folders/1b7-l8iWaZlQFkuqwATrP9SFlkqFVv8HC?usp=drive_link";
-        githubUrl = "https://github.com/workadventure/workadventure";
+        ressourcesUrl = WA.state.loadVariable('ressourceAdmin') as string;
+        ressourcesUrl = WA.state.loadVariable('gitAdmin') as string;
     }
 
     WA.ui.actionBar.addButton({
