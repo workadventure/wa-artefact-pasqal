@@ -34,49 +34,49 @@ WA.onInit().then(() => {
     let githubUrl: any;
     if(WA.player.tags.includes("room1")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom1') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom1') as string;
+        githubUrl = WA.state.loadVariable('gitRoom1') as string;
     } else if (WA.player.tags.includes("room2")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom2') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom2') as string;
+        githubUrl = WA.state.loadVariable('gitRoom2') as string;
     } else if (WA.player.tags.includes("room3")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom3') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom3') as string;
+        githubUrl = WA.state.loadVariable('gitRoom3') as string;
     } else if (WA.player.tags.includes("room4")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom4') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom4') as string;
+        githubUrl = WA.state.loadVariable('gitRoom4') as string;
     } else if (WA.player.tags.includes("room5")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom5') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom5') as string;
+        githubUrl = WA.state.loadVariable('gitRoom5') as string;
     } else if (WA.player.tags.includes("room6")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom6') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom6') as string;
+        githubUrl = WA.state.loadVariable('gitRoom6') as string;
     } else if (WA.player.tags.includes("room7")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom7') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom7') as string;
+        githubUrl = WA.state.loadVariable('gitRoom7') as string;
     } else if (WA.player.tags.includes("room8")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom8') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom8') as string;
+        githubUrl = WA.state.loadVariable('gitRoom8') as string;
     } else if (WA.player.tags.includes("room9")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom9') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom9') as string;
+        githubUrl = WA.state.loadVariable('gitRoom9') as string;
     } else if (WA.player.tags.includes("room10")) {
-        ressourcesUrl = WA.state.loadVariable('gitRoom10') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom10') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom10') as string;
+        githubUrl = WA.state.loadVariable('gitRoom10') as string;
     } else if (WA.player.tags.includes("room11")) {
-        ressourcesUrl = "WA.state.loadVariable('gitRoom11') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom11') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom11') as string;
+        githubUrl = WA.state.loadVariable('gitRoom11') as string;
     } else if (WA.player.tags.includes("room12")) {
-        ressourcesUrl = WA.state.loadVariable('gitRoom12') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom12') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom12') as string;
+        githubUrl = WA.state.loadVariable('gitRoom12') as string;
     } else if (WA.player.tags.includes("room13")) {
-        ressourcesUrl = WA.state.loadVariable('gitRoom13') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom13') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom13') as string;
+        githubUrl = WA.state.loadVariable('gitRoom13') as string;
     } else if (WA.player.tags.includes("room14")) {
-        ressourcesUrl = WA.state.loadVariable('gitRoom14') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom14') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom14') as string;
+        githubUrl = WA.state.loadVariable('gitRoom14') as string;
     } else if (WA.player.tags.includes("room15")) {
-        ressourcesUrl = WA.state.loadVariable('gitRoom15') as string;
-        ressourcesUrl = WA.state.loadVariable('gitRoom15') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesRoom15') as string;
+        githubUrl = WA.state.loadVariable('gitRoom15') as string;
     } else if (WA.player.tags.includes("admin")) {
         ressourcesUrl = WA.state.loadVariable('ressourceAdmin') as string;
         ressourcesUrl = WA.state.loadVariable('gitAdmin') as string;
