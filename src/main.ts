@@ -122,7 +122,14 @@ WA.onInit().then(() => {
         // @ts-ignore
         label: 'Help',
         callback: () => {
-            WA.nav.openCoWebSite("https://workadventure.github.io/embed-pages/src/pasqal/welcome.html");
+            WA.ui.modal.closeModal();
+            WA.ui.modal.openModal({
+                src: "https://workadventure.github.io/embed-pages/src/pasqal/welcome.html",
+                allow: 'fullscreen',
+                title: 'Bienvenue',
+                allowApi: true,
+                position: 'right',
+            });
         }
     });
     let helpZone: any;
