@@ -79,7 +79,7 @@ WA.onInit().then(() => {
         githubUrl = WA.state.loadVariable('gitRoom15') as string;
     } else if (WA.player.tags.includes("admin")) {
         ressourcesUrl = WA.state.loadVariable('ressourceAdmin') as string;
-        ressourcesUrl = WA.state.loadVariable('gitAdmin') as string;
+        githubUrl = WA.state.loadVariable('gitAdmin') as string;
     }
 
     WA.ui.actionBar.addButton({
