@@ -8,7 +8,7 @@ console.log('Script started successfully');
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
-
+    WA.player.setOutlineColor(0, 200, 135);
     WA.room.onEnterLayer("roofZone").subscribe(() => {
         WA.room.hideLayer('Roof1');
         WA.room.hideLayer('Roof2');
@@ -111,7 +111,7 @@ WA.onInit().then(() => {
         id: 'workspace',
         // @ts-ignore
         label: 'Ressources',
-        toolTip: 'Access to your project directory<style>#workspace {background: red !important;}</style>',
+        toolTip: 'Access to your project directory',
         callback: () => {
             WA.nav.openTab(ressourcesUrl as string);
         }
@@ -126,7 +126,7 @@ WA.onInit().then(() => {
         }
     });
     let helpZone: any;
-    WA.room.area.onEnter('helpZoneLeft').subscribe(() => {
+    WA.room.onEnterLayer('helpZone').subscribe(() => {
         helpZone = WA.ui.displayActionMessage({
             message: "<div style='text-align:center;'>Press <svg width='20' height='10' viewBox='0 0 20 10' style='margin-right: 2px; margin-left: 2px; fill: white; border-radius: 2px; border: 1px solid white; padding: 2px; box-sizing: border-box; background-color: white;'><text x='50%' y='50%' text-anchor='middle' dominant-baseline='middle' style='font-size: 10px; fill: black; font-weight: bold;'>SPACE</text></svg> to get help</div>",
             callback: () => {
@@ -141,8 +141,21 @@ WA.onInit().then(() => {
             }
         }); 
     })
-    WA.room.area.onLeave('helpZoneLeft').subscribe(() => {
+    WA.room.onLeaveLayer('helpZone').subscribe(() => {
         helpZone.remove();
+    })
+
+    let startZone: any;
+    setTimeout(function() {
+        startZone = WA.ui.displayActionMessage({
+            message: "<img src='https://workadventu.re/wp-content/uploads/2025/02/keyboard.gif' width='40' style='width: 40px !important;' id='keyboard-info' />",
+            callback: () => {
+
+            }
+        });
+    }, 3000)
+    WA.room.onLeaveLayer('start').subscribe(() => {
+        startZone.remove();
     })
     WA.room.area.onEnter('helpZoneRight').subscribe(() => {
         helpZone = WA.ui.displayActionMessage({
