@@ -31,69 +31,69 @@ WA.onInit().then(() => {
 
 
     let ressourcesUrl: any;
-    let githubUrl: any;
+    //let githubUrl: any;
     if(WA.player.tags.includes("room1")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom1') as string;
-        githubUrl = WA.state.loadVariable('gitRoom1') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom1') as string;
         console.log("As room1 right");
     } else if (WA.player.tags.includes("room2")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom2') as string;
-        githubUrl = WA.state.loadVariable('gitRoom2') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom2') as string;
         console.log("As room2 right");
     } else if (WA.player.tags.includes("room3")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom3') as string;
-        githubUrl = WA.state.loadVariable('gitRoom3') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom3') as string;
         console.log("As room3 right");
     } else if (WA.player.tags.includes("room4")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom4') as string;
-        githubUrl = WA.state.loadVariable('gitRoom4') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom4') as string;
         console.log("As room5 right");
     } else if (WA.player.tags.includes("room5")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom5') as string;
-        githubUrl = WA.state.loadVariable('gitRoom5') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom5') as string;
         console.log("As room6 right");
     } else if (WA.player.tags.includes("room6")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom6') as string;
-        githubUrl = WA.state.loadVariable('gitRoom6') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom6') as string;
         console.log("As room7 right");
     } else if (WA.player.tags.includes("room7")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom7') as string;
-        githubUrl = WA.state.loadVariable('gitRoom7') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom7') as string;
         console.log("As room8 right");
     } else if (WA.player.tags.includes("room8")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom8') as string;
-        githubUrl = WA.state.loadVariable('gitRoom8') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom8') as string;
         console.log("As room9 right");
     } else if (WA.player.tags.includes("room9")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom9') as string;
-        githubUrl = WA.state.loadVariable('gitRoom9') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom9') as string;
         console.log("As room10 right");
     } else if (WA.player.tags.includes("room10")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom10') as string;
-        githubUrl = WA.state.loadVariable('gitRoom10') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom10') as string;
         console.log("As room11 right");
     } else if (WA.player.tags.includes("room11")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom11') as string;
-        githubUrl = WA.state.loadVariable('gitRoom11') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom11') as string;
         console.log("As room12 right");
     } else if (WA.player.tags.includes("room12")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom12') as string;
-        githubUrl = WA.state.loadVariable('gitRoom12') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom12') as string;
     } else if (WA.player.tags.includes("room13")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom13') as string;
-        githubUrl = WA.state.loadVariable('gitRoom13') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom13') as string;
         console.log("As room13 right");
     } else if (WA.player.tags.includes("room14")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom14') as string;
-        githubUrl = WA.state.loadVariable('gitRoom14') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom14') as string;
         console.log("As room14 right");
     } else if (WA.player.tags.includes("room15")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesRoom15') as string;
-        githubUrl = WA.state.loadVariable('gitRoom15') as string;
+        //githubUrl = WA.state.loadVariable('gitRoom15') as string;
         console.log("As room15 right");
     } else if (WA.player.tags.includes("admin")) {
         ressourcesUrl = WA.state.loadVariable('ressourcesAdmin') as string;
-        githubUrl = WA.state.loadVariable('gitAdmin') as string;
+        //githubUrl = WA.state.loadVariable('gitAdmin') as string;
         console.log("As admin right");
     }
 
