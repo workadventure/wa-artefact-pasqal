@@ -92,11 +92,12 @@ WA.onInit().then(() => {
         githubUrl = WA.state.loadVariable('gitRoom15') as string;
         console.log("As room15 right");
     } else if (WA.player.tags.includes("admin")) {
-        ressourcesUrl = WA.state.loadVariable('ressourceAdmin') as string;
+        ressourcesUrl = WA.state.loadVariable('ressourcesAdmin') as string;
         githubUrl = WA.state.loadVariable('gitAdmin') as string;
         console.log("As admin right");
     }
 
+    /*
     WA.ui.actionBar.addButton({
         id: 'github-btn',
         type: 'action',
@@ -106,7 +107,7 @@ WA.onInit().then(() => {
             WA.nav.openTab(githubUrl as string);
         }
     });
-
+    */
     WA.ui.actionBar.addButton({
         id: 'workspace',
         // @ts-ignore
