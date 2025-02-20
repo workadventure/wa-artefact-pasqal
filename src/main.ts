@@ -109,7 +109,7 @@ WA.onInit().then(() => {
     WA.ui.actionBar.addButton({
         id: 'workspace',
         // @ts-ignore
-        label: 'Ressources',
+        label: 'Resources',
         toolTip: 'Access to your project directory',
         callback: () => {
             WA.nav.openTab(ressourcesUrl as string);
